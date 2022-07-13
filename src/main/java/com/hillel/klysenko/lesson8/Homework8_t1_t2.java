@@ -2,7 +2,7 @@ package com.hillel.klysenko.lesson8;
 
 import java.util.Arrays;
 
-public class Homework8 {
+public class Homework8_t1_t2 {
     public static void main(String[] args) {
         task1();
         task2();
@@ -19,6 +19,7 @@ public class Homework8 {
            team1 += array1[i];
            result1 = team1 / array1.length;
         }
+        System.out.println("Task 1:");
             System.out.println("The age of the players of the team №1 are: " + Arrays.toString(array1));
             System.out.println("The average age of team №1 is: " + result1);
 
@@ -29,20 +30,26 @@ public class Homework8 {
         }
         System.out.println("The age of the players of the team №2 are: " + Arrays.toString(array2));
         System.out.println("The average age of team №2 is: " + result2);
+        System.out.println();
     }
 
 
     static void task2(){
         int [] source = {0, 1, 2, 4};
-        int [] target = {7, 8, 9, 10, 12};
-        int [] arrayCopy = new int[target.length + source.length];;
-        for(int i = 0; i < arrayCopy.length; i++) {
+        int [] target = {2, 9, 10, 12};
+        int [] resultTarget = new int [target.length + source.length];
+        arrayCopy(target, source, resultTarget);
+        System.out.println("Task 2:");
+        System.out.println(Arrays.toString(resultTarget));
+    }
+    static void arrayCopy(int[] target, int [] source, int [] resultTarget) {
+        for (int i = 0; i < (target.length + source.length); i++) {
             if (i < target.length) {
-                arrayCopy[i] = target[i];
-            } else {
-                arrayCopy[i] = source[i - target.length];
+                resultTarget[i] = target[i];
+            }
+            else {
+                resultTarget[i] = source[i - target.length];
             }
         }
-        System.out.println(Arrays.toString(arrayCopy));
     }
 }
