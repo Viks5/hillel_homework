@@ -36,14 +36,14 @@ public class Homework8_t1_t2 {
 
     static void task2(){
         int [] source = {0, 1, 2, 4};
-        int [] target = {2, 9, 10, 12};
+        int [] target = {2, 9, 10};
         int [] resultTarget = new int [target.length + source.length];
         arrayCopy(target, source, resultTarget);
         System.out.println("Task 2:");
         System.out.println(Arrays.toString(resultTarget));
     }
     static void arrayCopy(int[] target, int [] source, int [] resultTarget) {
-        for (int i = 0; i < (target.length + source.length); i++) {
+        for (int i = 0; i < resultTarget.length; i++) {
             if (i < target.length) {
                 resultTarget[i] = target[i];
             }
