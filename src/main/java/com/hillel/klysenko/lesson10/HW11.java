@@ -42,7 +42,14 @@ public class HW11 {
             int n = 0;
             if (scanner.hasNextInt()) {
                 n = scanner.nextInt();
+                if (n > 0) {
                     return n;
+                } else {
+                    System.out.println("Please enter some value from 0. Try again");
+                    n--;
+                    continue;
+                }
+
             } else {
                 System.out.println("Please enter some value");
                 scanner.next();
