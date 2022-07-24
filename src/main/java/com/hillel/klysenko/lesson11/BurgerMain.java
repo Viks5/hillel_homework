@@ -4,6 +4,6 @@ package com.hillel.klysenko.lesson11;
     public static void main(String[] args) {
      Burger standardBurger = new Burger("bup", "beef", "mozzarella", "lettuce", "mayonnaise");
      Burger dietaryBurger = new Burger("bup", "chicken", "mozzarella", "lettuce");
-     Burger doubleMeatBurger = new Burger("bup", "beef", "beef", "mozzarella", "lettuce", "mayonnaise");
+     Burger doubleMeatBurger = new Burger("bup", "double", "beef", "mozzarella", "lettuce", "mayonnaise");
  }
 }

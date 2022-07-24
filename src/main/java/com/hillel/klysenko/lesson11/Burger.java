@@ -2,6 +2,12 @@ package com.hillel.klysenko.lesson11;
 
 public class Burger {
 
+    String bup;
+    String numberOfMeat;
+    String meat;
+    String cheese;
+    String greens;
+    String mayonnaise;
     public Burger(String bup, String meat,
                   String cheese, String greens, String mayonnaise) {
             System.out.println("Standard burger consist of: " + bup + ", " + meat + ", "
@@ -12,9 +18,9 @@ public class Burger {
         System.out.println("Dietary burger consist of: " + bup + ", " + meat + ", "
                 + cheese + ", " + greens +  " (without mayonnaise)");
     }
-    public Burger(String bup, String meat, String secondMeat,
+    public Burger(String bup, String numberOfMeat, String meat,
                   String cheese, String greens, String mayonnaise) {
-        System.out.println("Burger with double meat consist of: " + bup + ", " + meat + ", "+ secondMeat + ", "
+        System.out.println("Burger with double meat consist of: " + bup + ", " + numberOfMeat + " " + meat + ", "
                 + cheese + ", " + greens +  ", " + mayonnaise);
     }
 }
