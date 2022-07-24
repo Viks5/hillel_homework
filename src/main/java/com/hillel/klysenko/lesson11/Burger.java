@@ -1,12 +1,7 @@
 package com.hillel.klysenko.lesson11;
 
 public class Burger {
-    String bup;
-    String meat;
-    String secondMeat;
-    String cheese;
-    String greens;
-    String mayonnaise;
+
     public Burger(String bup, String meat,
                   String cheese, String greens, String mayonnaise) {
             System.out.println("Standard burger consist of: " + bup + ", " + meat + ", "
