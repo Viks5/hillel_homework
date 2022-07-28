@@ -2,17 +2,17 @@ package com.hillel.klysenko.lesson12;
 
 public class FitnessTracker {
         private String name;
-        public  String surname;
+        private  String surname;
         private String dayOfBirth;
         private String mounthOfBirth;
         private int yearOfBirth;
         private int ageFullYears;
-        public int YEAR = 2020;
+        private final int YEAR = 2020;
         private String email;
         private String phoneNumber;
-        public  double weight;
-        public  String preassure;
-        public  int numberOfStepsPerDay;
+        private  double weight;
+        private  String preassure;
+        private  int numberOfStepsPerDay;
 
         public FitnessTracker(String name, String surname, String dayOfBirth, String mounthOfBirth,int yearOfBirth,
                  String email, String phoneNumber, double weight,
