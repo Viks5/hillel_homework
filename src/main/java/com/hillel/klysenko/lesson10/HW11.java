@@ -14,18 +14,10 @@ public class HW11 {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = (int) (Math.random() * VALUE);
-            }
-        }
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " \t");
                 array2[j][i] = array[i][j];
             }
-        }
-        for (int i = 0; i < array.length; i++) {
-                for (int j = 0; j < array[i].length; j++) {
-                    System.out.print(array[i][j] + " \t");
-                }
-                System.out.println();
+            System.out.println();
         }
         System.out.println();
         for (int i = 0; i < array2.length; i++) {
@@ -37,7 +29,7 @@ public class HW11 {
         scanner.close();
     }
     static int getNumber(Scanner scanner) {
-        System.out.println("Please enter some value");
+        System.out.println("Please, enter some integer number");
         while (true) {
             int n = 0;
             if (scanner.hasNextInt()) {
@@ -45,13 +37,10 @@ public class HW11 {
                 if (n > 0) {
                     return n;
                 } else {
-                    System.out.println("Please enter some value from 0. Try again");
-                    n--;
-                    continue;
+                    System.out.println("Please, enter some integer number from 0. Try again");
                 }
-
             } else {
-                System.out.println("Please enter some value");
+                System.out.println("You entered an invalid value. Please, enter some integer number");
                 scanner.next();
             }
         }
