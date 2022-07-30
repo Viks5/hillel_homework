@@ -2,17 +2,17 @@ package com.hillel.klysenko.lesson13.task1;
 
 public class Main {
     public static void main(String[] args) {
-        Androids androids = new Androids();
-        IPhones iPhones = new IPhones();
-        androids.linuxOS();
-        androids.call();
-        androids.sms();
-        androids.internet();
+        Androids android = new Androids();
+        IPhones iPhone = new IPhones();
+        android.linuxOS();
+        android.call();
+        android.sms();
+        android.internet();
         System.out.println();
-        iPhones.iOS();
-        iPhones.internet();
-        iPhones.call();
-        iPhones.sms();
+        iPhone.iOS();
+        iPhone.internet();
+        iPhone.call();
+        iPhone.sms();
 
 
 
