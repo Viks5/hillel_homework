@@ -1,6 +1,5 @@
 package com.hillel.klysenko.lessons16.HW18;
 
-import com.hillel.klysenko.lesson16.HW17.ArrayUnitHW17;
 import com.hillel.klysenko.lesson16.HW18.ArrayHW18;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
