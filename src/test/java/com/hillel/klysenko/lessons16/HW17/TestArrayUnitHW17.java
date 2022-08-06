@@ -7,16 +7,16 @@ import org.junit.jupiter.api.Test;
 
 public class TestArrayUnitHW17 {
     static int[][] array;
-    static double k;
+    static double averageValue;
 
     @BeforeAll
     public static void incomingData() {
         array = new int[][]{{4, 8}, {4, 2}};
-        k = 4.5;
+        averageValue = 4.5;
     }
     @Test
-    public void getNumber() {
-        Assertions.assertEquals(k, ArrayUnitHW17.getAverageValue(array));
+    public void getAverageValue() {
+        Assertions.assertEquals(averageValue, ArrayUnitHW17.getAverageValue(array));
     }
 
     @Test

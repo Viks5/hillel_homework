@@ -14,11 +14,11 @@ public class TestArrayHW18 {
     @BeforeAll
     public static void incomingData() {
         array = new int[]{1, 2, 3, 6, 6};
-        value = 2;
-        index = 1;
+        value = 3;
+        index = 2;
     }
     @Test
-    public void averageValue() {
+    public void getNumber() {
         Assertions.assertEquals(index, ArrayHW18.getNumber(array, value));
     }
 
