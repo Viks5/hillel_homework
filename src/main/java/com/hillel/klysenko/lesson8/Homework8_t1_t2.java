@@ -36,7 +36,7 @@ public class Homework8_t1_t2 {
 
     static void task2(){
         int [] source = {0, 1, 2, 4};
-        int [] target = {2, 9, 10};
+        int [] target = {2, 9, 10, 3, 115};
         int [] resultTarget = new int [target.length + source.length];
         arrayCopy(target, source, resultTarget);
         System.out.println("Task 2:");
