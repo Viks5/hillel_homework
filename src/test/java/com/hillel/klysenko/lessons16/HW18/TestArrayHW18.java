@@ -18,8 +18,8 @@ public class TestArrayHW18 {
         index = 2;
     }
     @Test
-    public void getNumber() {
-        Assertions.assertEquals(index, ArrayHW18.getNumber(array, value));
+    public void getIndex() {
+        Assertions.assertEquals(index, ArrayHW18.getIndex(array, value));
     }
 
     @Test

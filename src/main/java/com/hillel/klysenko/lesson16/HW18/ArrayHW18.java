@@ -2,7 +2,7 @@ package com.hillel.klysenko.lesson16.HW18;
 
 public class ArrayHW18 {
 
-    public static Integer getNumber(int[] array, double value) {
+    public static Integer getIndex(int[] array, double value) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value) {
                 return i;
