@@ -13,12 +13,18 @@ public class TestArrayHW18 {
 
     @BeforeAll
     public static void incomingData() {
-        array = new int[]{4, 3, 5, 6};
-        value = 4;
-        index = 2;
+        array = new int[]{1, 2, 3, 6, 6};
+        value = 2;
+        index = 1;
     }
-//    @Test
-//    public void averageValue() {
-//        Assertions.assertEquals(index, ArrayHW18.getNumber(array));
-//    }
+    @Test
+    public void averageValue() {
+        Assertions.assertEquals(index, ArrayHW18.getNumber(array, value));
+    }
+
+    @Test
+    public void isSorted() {
+        Assertions.assertTrue(ArrayHW18.checkIsSorted(array));
+    }
+
 }
